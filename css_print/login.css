@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #a5a5a5;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo blanco con transparencia al 50% */
+    backdrop-filter: blur(6px); /* Desenfoque al 20% */
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 95%;
+    padding: 8px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e4e4e4;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Estilos para dispositivos m¨®viles */
+@media (max-width: 480px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

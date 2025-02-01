@@ -1,0 +1,152 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f5;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+select,
+input[type="date"] {
+  border-radius: 5px;
+  padding: 10px;
+  color: #444;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  width: auto;
+  display: inline-block;
+  margin-right: 10px; /* Espacio entre selectores */
+  margin-bottom: 20px;
+}
+
+select:hover,
+input[type="date"]:hover {
+  background-color: #fff;
+  border-color: #888;
+}
+
+/* Mejoras en la caja de informaci¨®n */
+.container-info {
+  margin-top: 30px; /* Margen superior */
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1.5em;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+table thead th {
+  background-color: #e0e0e0; /* Fondo gris tenue */
+  color: #000; /* Letras negras */
+  font-weight: bold; /* Letras en negrita */
+  text-align: left;
+  padding: 1em;
+  border: none;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+table td {
+  padding: 1em;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+table tbody td:first-child {
+  font-weight: bold; /* Tipos de pago en negrita */
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Estilos para los botones */
+.print-button,
+.print-button2 {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.print-button:hover,
+.print-button2:hover {
+  background-color: #388E3C;
+}
+
+.print-button2 {
+  background-color: #444;
+}
+
+.print-button2:hover {
+  background-color: #333;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
+
+@media print {
+  table thead th {
+    background-color: transparent;
+    font-weight: normal;
+    border: none;
+  }
+
+  button {
+    display: none;
+  }
+}

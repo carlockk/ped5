@@ -1,0 +1,170 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8; /* Fondo gris claro */
+}
+
+.container {
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+select {
+  border-radius: 5px;
+  padding: 5px;
+  color: #666;
+  font-size: 16px;
+}
+
+/* Estilos para la tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra tenue para la tabla */
+  background-color: #fff;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  font-size: 16px;
+}
+
+th {
+  background-color: #999;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+/* Estilos para la tabla en dispositivos m��viles */
+@media only screen and (max-width: 600px) {
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  td,
+  th {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  td {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  td:first-child {
+    border-top: none;
+  }
+
+  td:last-child {
+    border-bottom: none;
+  }
+
+  thead {
+    display: none;
+  }
+}
+
+/* Estilos para la tabla en pantallas grandes */
+@media only screen and (min-width: 1000px) {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+
+  th {
+    background-color: #999;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  td {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+}
+
+/* Estilos para el bot��n de imprimir */
+.print-button {
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.print-button:hover {
+   background-color: #005580;
+}
+
+.algo {
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  content: attr(data-th-order);
+}
+
+/* Estilos adicionales para la tabla 
+.titulo {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dato {
+  font-weight: normal;
+}*/
+
+
+.columna-izquierda {
+  float: left;
+  width: 35%;
+}
+
+.columna-derecha {
+  float: right;
+  width: 65%;
+}

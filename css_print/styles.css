@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem; /* Base de 16px */
+}
+
+.container {
+    max-width: 75rem; /* 1200px */
+    margin: 1.25rem auto; /* 20px */
+    padding: 1.25rem; /* 20px */
+    background-color: #fff;
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* 0px 2px 5px */
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2rem; /* 32px */
+}
+
+select {
+  border-radius: 5px;
+  padding: 10px;
+  color: #444;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  width: auto;
+  display: inline-block;
+  margin-right: 10px; /* Espacio entre selectores */
+  margin-bottom: 20px;
+}
+
+select:hover {
+  background-color: #fff;
+  border-color: #888;
+}
+
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem; /* 12px arriba/abajo, 24px a los lados */
+    border-radius: 0.375rem; /* 6px de border radius */
+    border: none; /* Sin borde */
+    font-size: 1rem; /* Tamaño de fuente ajustado */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+th, td {
+    border: 0.0625rem solid #ddd; /* 1px */
+    padding: 0.5rem; /* 8px */
+    text-align: left;
+    font-size: 0.875rem; /* 14px */
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+td.order-number {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Letras blancas */
+    font-weight: bold;
+}
+
+td a {
+    color: #333;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+
+.btn-nuevo {
+    background-color: #FF5B00; /* Fondo rojo */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 0.50rem 1.5rem; /* 12px arriba/abajo, 24px a los lados */
+    height: 100%; /* Igual altura que el contenedor donde está */
+    border-top-right-radius: 0.375rem; /* Solo borde redondeado a la derecha (6px) */
+    border-bottom-right-radius: 0.375rem;
+    border-top-left-radius: 0; /* Sin borde redondeado a la izquierda */
+    border-bottom-left-radius: 0;
+    font-family: consolas, monospace; /* Tipografía Consolas */
+    font-size: 1rem; /* Tamaño de fuente ajustado */
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    line-height: normal; /* Asegura un alineamiento correcto del texto */
+}
+
+.btn-nuevo:hover {
+    background-color: #e04e00; /* Color más oscuro al pasar el ratón */
+}
+
+
+
+
+
+.responsive-hide {
+    display: none;
+}
+
+@media (min-width: 48rem) { /* 768px */
+    .responsive-hide {
+        display: table-cell;
+    }
+}
+
+.pagination {
+    text-align: center;
+    padding: 0.625rem 0; /* 10px */
+}
+
+.pagination a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 0.3125rem; /* 5px */
+    padding: 0.5rem 1rem; /* 8px 16px */
+    border: 0.0625rem solid #ddd; /* 1px */
+    border-radius: 0.25rem; /* 4px */
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Ajustes para dispositivos móviles de alta resolución */
+@media (max-width: 48rem) { /* 768px */
+    h1 {
+        font-size: 2.25rem; /* 36px */
+    }
+
+    select, button, input {
+        font-size: 1rem; /* 16px */
+        padding: 0.625rem; /* 10px */
+    }
+
+    th, td {
+        font-size: 1rem; /* 16px */
+        padding: 0.625rem; /* 10px */
+    }
+
+    td.order-number {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .pagination a {
+        padding: 0.625rem 1.25rem; /* 10px 20px */
+    }
+}
